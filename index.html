@@ -12,11 +12,26 @@
 </head>
 
 <body>
+    <ul class="test">
+        <a href="#">home</a>
+        <audio id="gehaktbal" preload="auto">
+            <source src="/media/liedje.mp3">
+        </audio>
+    </ul>
+    
+    <script>
+        var gehakt= $("#gehaktbal")[0];
+        $(".test")
+        .mouseenter(function(){
+            gehakt.play();
+        });
+    </script>
+
     <section>
         <h2>Akash' website</h2>
         <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/9Pzj6U5c2cs" 
-        title="Gehaktbal" 
+        title="lekker" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
